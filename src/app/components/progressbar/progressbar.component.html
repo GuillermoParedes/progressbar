@@ -1,0 +1,9 @@
+<div [ngClass]="'progress ' + className" [ngStyle]="configStyle" >
+  <div class="progress-value"
+    [ngStyle]="{'width': value + '%', 'height': 'inherit', 'background-color': color}"
+  >
+  </div>
+</div>
+<span class="label-text">
+  {{label}}
+</span>

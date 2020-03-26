@@ -1,0 +1,26 @@
+.progress {
+  align-items: center;
+  background: #dfe6e9;
+  border-radius: 100px;
+  display: flex;
+  justify-content: flex-start;
+  min-height: 10px;
+  position: relative;
+  overflow: hidden;
+  width: (100% - inherit);
+
+  .progress-value {
+    transition: width 1s ease-out ;
+    border-radius: 100px;
+    min-height: 10px;
+    border-radius: 50px;
+
+  }
+}
+.label-text {
+  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 2%;
+  text-transform: uppercase;
+}

@@ -1,27 +1,57 @@
-# Progressio
+# ProgressBar Component
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
+Este componente fue desarrollado bajo los siguientes requerimientos:
 
-## Development server
+- NodeJS >= 8.10.0
+- Angular 7
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Uso
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Para utilizar el component, necesitamos importarlo en el Modulo que lo necesitemos, de la siguiente manera.
 
-## Build
+```ts
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    ProgressbarModule
+  ]
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Ahora solo necesitamos llamar a nuestro componente en nuestras templetas `HTML`
 
-## Running unit tests
+```html
+ <app-progressbar
+    [value]="value"
+    [total]="100"
+    [color]="'#16a085'"
+    [configStyle]="{'height': '40px', 'padding': '20px'}"
+    (changed)="changedProgressbar($event)"
+    (completed)="completedProgressbar($event)"
+  ></app-progressbar>
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Parametros de Entrada
 
-## Running end-to-end tests
+Tenemos los siguientes parametros:
+- value: El valor con el que se marcara la barra de progreso.
+- total: El total de la barra de progreso.
+- color: El color de la barra de progreso.
+- configStyle: Este es un objeto que puede contener todo lo que queramos modificar del componente en cuestion de estilos.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
+## Parametros de Salida
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Tenemos los siguientes parametros:
+- changed: Evento que se dispara cuando ocurre un cambio dentro del componente.
+- completed: Evento que se dispara cuando llega al total del componente.
+
+
+
+
+### Author
+Guillermo David Paredes Torrez
+
+@FondationTutator
+
+@Codevs
