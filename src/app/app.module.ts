@@ -4,12 +4,14 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProgressbarModule } from './components/progressbar/progressbar.module';
-import { NotificationComponent } from './components/notification/notification.component';
+import { Tp35RaitingComponent } from './components/tp35-raiting/tp35-raiting.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    NotificationComponent,
+    Tp35RaitingComponent,
+
   ],
   imports: [
     BrowserModule,

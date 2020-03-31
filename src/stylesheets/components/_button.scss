@@ -1,0 +1,13 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+.btn {
+  padding: 10px;
+
+  &__primary {
+    background-color: #1064ff;
+    color: #fff;
+    border: 0;
+    border-radius: 20px;
+  }
+}
