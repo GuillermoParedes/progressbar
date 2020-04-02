@@ -8,6 +8,13 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'progressio';
   value: number = 10;
+  code = `
+    export model = new Model({
+      a:1,
+      b:function(){}
+    })
+  `;
+
   constructor() {}
 
   increment() {
