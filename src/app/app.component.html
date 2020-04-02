@@ -1,4 +1,4 @@
-<!--The content below is only a placeholder and can be replaced.-->
+<!--
 <div style="text-align:center">
   <h1>
     Welcome to {{ title }}!
@@ -18,6 +18,23 @@
 
 </div>
 
+ -->
 
 
-<router-outlet></router-outlet>
+<div style="text-align:center">
+  <h4>Component tp35-raiting Star</h4>
+  <app-tp35-raiting>
+  </app-tp35-raiting>
+
+  <h4>Component tp35-raiting</h4>
+  <app-tp35-raiting [icon]="'cards-heart'" [total]="10" [colorChecked]="'#e74c3c'">
+  </app-tp35-raiting>
+
+  <h4>Component tp35-raiting</h4>
+  <app-tp35-raiting [icon]="'cup'" [total]="6" [colorChecked]="'#d35400'">
+  </app-tp35-raiting>
+
+  <h4>Component tp35-raiting</h4>
+  <app-tp35-raiting [icon]="'thumb-up'" [total]="8" [colorChecked]="'#2ecc71'">
+  </app-tp35-raiting>
+</div>

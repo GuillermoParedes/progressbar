@@ -1,3 +1,18 @@
-<p>
-  tp35-raiting works!
-</p>
+<div class="tp35-raiting">
+  <ng-container *ngFor="let ind of total | numberEach">
+    <app-tp35-raiting-icon
+      [icon]="'mdi mdi-'+icon"
+      [color]="ind <= value ? colorChecked: colorUnChecked"
+      [index]="ind"
+      (click)="selected(ind)"
+    >
+    </app-tp35-raiting-icon>
+  </ng-container>
+  <app-tp35-raiting-label
+    [value]="value"
+    [total]="total"
+    (click)="reset($event)"
+  ></app-tp35-raiting-label>
+</div>
+
+

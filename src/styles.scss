@@ -1,2 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 @import "./stylesheets/main.scss";
+@import '~@mdi/font/css/materialdesignicons.css';
+
+
+body {
+  background-color: #ecf0f1;
+}

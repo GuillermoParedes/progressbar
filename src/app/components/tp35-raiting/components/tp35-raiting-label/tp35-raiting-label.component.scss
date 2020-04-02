@@ -1,0 +1,22 @@
+
+
+.description {
+  display: flex;
+  align-content: space-between;
+  justify-content: space-between;
+  .label {
+
+    font-size: 0.8em;
+    opacity: 1;
+    font-weight: 900;
+    margin: 0;
+  }
+
+  .reset  {
+    color: #e74c3c;
+    font-size: 0.8em;
+    opacity: 1;
+
+    margin: 0;
+  }
+}
